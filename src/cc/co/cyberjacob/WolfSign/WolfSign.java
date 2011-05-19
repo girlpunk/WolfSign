@@ -36,9 +36,8 @@ public class WolfSign extends JavaPlugin
         //register the pluginmanager
         PluginManager pm = this.getServer().getPluginManager();
         //register for sign_change
-        //TODO: fix SignListner
         pm.registerEvent(SIGN_CHANGE, SignListener, Normal, this);
     }
 
-    private final WolfSignSignListener SignLstener = new WolfSignSignListener(this);
+    private final WolfSignSignListener SignListener = new WolfSignSignListener(this);
 }
